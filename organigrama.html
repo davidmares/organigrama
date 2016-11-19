@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Titulo</title>
+	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u' crossorigin='anonymous'>
+
+	<!-- Estilos para el organigrama -->
+	<link rel='stylesheet' type='text/css' href='organigrama.css'>
+</head>
+<body>
+
+<!-- Div contenedor del organigrama -->
+<div id='organigrama'>
+</div>
+
+<!-- Carga de datos de ejemplo -->
+<script type='text/javascript' src='data.js'></script>
+<!-- Libreria para la creación del organigrama -->
+<script type='text/javascript' src='organigrama.js'></script>
+
+<script type='text/javascript'>
+	(function(){
+		// Carga de datos para el organigrama
+		organigrama.data = data;
+		// creación del organigrama, se le manda el id del contenedor
+		organigrama.create('organigrama');
+		// Agregamos los eventos para los botones
+		organigrama.eventAdd(EventoAdd);
+		organigrama.eventEdit(EventoEdit);
+
+		function EventoAdd(id){
+			alert('Agregar ' + id);	
+		}
+
+		function EventoEdit(id){
+			alert('Editar ' + id);
+		}
+
+	})();
+</script>
+
+</body>
+</html>

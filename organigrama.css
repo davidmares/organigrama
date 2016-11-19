@@ -1,0 +1,89 @@
+
+/*
+	Estilos para el organigrama
+	Autor: David Mares
+	Version: DEV
+*/
+.organigrama{
+	overflow: auto;
+	background: #ecf0f1;
+	padding: 50px;
+	max-height: 700px;
+
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none; 
+}
+.organigrama  table{
+	width: 100%;
+}
+.organigrama table td{
+	text-align: center;
+	vertical-align: top;
+}
+.organigrama .nodo{
+	position: relative;
+	width: 120px;
+	border-bottom: 5px solid #34495e;
+	background: #34495e;
+	color: #ecf0f1;
+	display: inline-block;
+	padding: 20px 10px;
+	margin: 0 10px;
+	cursor: pointer;
+}
+.organigrama table td .line-down{
+	width: 2px;
+	display: inline-block;
+}
+.organigrama .line{
+	border-width: 2px;
+}
+.organigrama .line.up{
+	border-top: 2px solid #34495e !important;
+}
+.organigrama .line.right{
+	border-right: 2px solid #34495e !important;
+}
+.organigrama .line.left{
+	border-left: 2px solid #34495e !important;
+}
+.organigrama .nodo.collapsed{
+	border-bottom-color: #d35400;
+}
+.organigrama .nodo .controls{
+	display: none;
+	position: absolute;
+	top: 0;
+	right: -56px;
+	background: #ecf0f1;
+	z-index: 2;
+	padding: 6px 10px 6px 6px;
+}
+.organigrama .nodo:hover .controls{
+	display: block;
+}
+
+.organigrama .nodo .btn-collapse{
+	position: absolute;
+	display: inline-block;
+	color: #e74c3c;
+	top: 100%;
+	left: 50%;
+	margin-top: 5px;
+	margin-left: -9px;
+	font-size: 18px;
+	background: #ecf0f1;
+}
+.organigrama .nodo .badge{
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #2c3e50;
+	background: #ecf0f1;
+}
+.organigrama .nodo .nodo-nombre{
+	font-style: italic;
+	color: #bdc3c7;
+}
