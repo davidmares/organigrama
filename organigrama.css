@@ -1,4 +1,6 @@
-
+.modal .panel{
+	margin-bottom: 0px;
+}
 /*
 	Estilos para el organigrama
 	Autor: David Mares
@@ -87,3 +89,5 @@
 	font-style: italic;
 	color: #bdc3c7;
 }
+
+https://github.com/davidmares/organigrama.git

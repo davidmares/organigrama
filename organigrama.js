@@ -161,6 +161,7 @@
 			var div = document.createElement('div');
 			div.className = 'controls';
 
+			// Btn Add
 			var btn = document.createElement('btn');
 			btn.setAttribute('type','button');
 			btn.setAttribute('data-id', id);
@@ -170,7 +171,8 @@
 			icon.className = 'glyphicon glyphicon-plus';
 			btn.appendChild(icon);
 			div.appendChild(btn);
-
+			
+			// Btn Edit
 			btn = document.createElement('btn');
 			btn.setAttribute('type','button');
 			btn.setAttribute('data-id', id);
